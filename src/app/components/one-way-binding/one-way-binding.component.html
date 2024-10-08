@@ -1,10 +1,13 @@
-<h3>{{ title }}</h3> <!-- Interpolation -->
+<!-- app.component.html -->
+<div class="container">
+  <h3>{{ title }}</h3> <!-- Interpolation -->
 
-<!-- Using a template reference variable to access the input value -->
-<input #nameInput (input)="updateName(nameInput.value)" placeholder="Enter your name" /> <!-- Event binding -->
+  <!-- Using a template reference variable to access the input value -->
+  <input #nameInput (input)="updateName(nameInput.value)" placeholder="Enter your name" class="input-field" /> <!-- Event binding -->
 
-<!-- Display the updated name -->
-<p>Hello, {{ name }}!</p> <!-- Interpolation -->
+  <!-- Display the updated name -->
+  <p class="greeting">Hello, {{ name }}!</p> <!-- Interpolation -->
 
-<!-- Property binding for button disabled state -->
-<button [disabled]="buttonDisabled">Submit</button> <!-- Property binding -->
+  <!-- Property binding for button disabled state -->
+  <button [disabled]="buttonDisabled" class="submit-button">Submit</button> <!-- Property binding -->
+</div>

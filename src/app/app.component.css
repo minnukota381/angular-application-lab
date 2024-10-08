@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+nav {
+  background-color: #343a40; /* Dark gray for the navbar */
+  padding: 15px; /* Padding for the navbar */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Horizontal layout for navigation items */
+  justify-content: center; /* Center the nav items */
+  padding: 0; /* Remove default padding */
+}
+
+nav li {
+  margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #495057;
+}
+
+app-halcyon {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+router-outlet {
+  display: block;
+  margin: 20px auto;
+  max-width: 800px;
+}

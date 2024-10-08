@@ -1,34 +1,66 @@
 .container {
-  margin: 20px;
-  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333; /* Dark gray for the heading */
+  margin-bottom: 30px; /* Space below heading */
 }
 
 .input-group {
-  margin: 10px 0;
+  display: flex; /* Use flexbox for input and label alignment */
+  justify-content: center; /* Center align items */
+  margin-bottom: 20px; /* Space below input groups */
 }
 
 label {
-  margin-right: 10px;
+  font-size: 1.2em; /* Larger font size for labels */
+  margin-right: 10px; /* Space between label and input */
 }
 
-input {
-  padding: 5px;
-  font-size: 16px;
+input[type="number"] {
+  width: 150px; /* Fixed width for input fields */
+  padding: 10px; /* Padding for comfort */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Standard font size */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="number"]:focus {
+  border-color: #0056b3; /* Darker blue on focus */
+  outline: none; /* Remove default outline */
 }
 
 button {
-  padding: 8px 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #28a745; /* Green button */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Standard font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 0 10px; /* Space between buttons */
+  transition: background-color 0.3s; /* Smooth transition for background */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #218838; /* Darker green on hover */
 }
 
 .result {
-  margin-top: 20px;
+  margin-top: 30px; /* Space above result */
+}
+
+.result h3 {
+  font-size: 1.5em; /* Large font size for the result */
+  color: #007bff; /* Bright blue color for the result */
 }
