@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Addition of Two Numbers</h1>
+
+  <div class="input-group">
+    <label for="number1">Number 1: </label>
+    <input id="number1" type="number" [(ngModel)]="number1">
+  </div>
+
+  <div class="input-group">
+    <label for="number2">Number 2: </label>
+    <input id="number2" type="number" [(ngModel)]="number2">
+  </div>
+
+  <button (click)="addNumbers()">Add</button>
+  <button (click)="subNumbers()">Sub</button>
+  <button (click)="mulNumbers()">Mul</button>
+  <button (click)="divNumbers()">Div</button>
+
+  <div class="result">
+    <h3>Result: {{ result }}</h3>
+  </div>
+</div>
