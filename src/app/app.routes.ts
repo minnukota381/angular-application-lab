@@ -8,6 +8,7 @@ export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
   { path: 'two-way-binding', component: TwoWayBindingComponent },
   { path: 'signal-binding', component: SignalBindingComponent },
+  { path: 'login', component: HalcyonComponent },
   { path : 'halcyon', component: HalcyonComponent },
   { path: '', redirectTo: '/halcyon', pathMatch: 'full' },
 ];

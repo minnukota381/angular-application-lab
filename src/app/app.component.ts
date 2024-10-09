@@ -4,6 +4,7 @@ import { HalcyonComponent } from './components/halcyon/halcyon.component';
 import { OneWayBindingComponent } from "./components/one-way-binding/one-way-binding.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 import { RouterOutlet } from '@angular/router';
+import { LoginComponent } from "./components/login/login.component";
 
 // @Component({
 //   selector: 'app-root',
@@ -21,6 +22,6 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent],
+  imports: [RouterOutlet, HalcyonComponent, LoginComponent],
 })
 export class AppComponent {}
