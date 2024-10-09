@@ -1,0 +1,34 @@
+.container {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000080;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  outline: none;
+  appearance: none;
+  transition: border-color 0.3s ease;
+}
+
+.custom-select:hover {
+  border-color: #ff9800;
+}
+
+.selected-course {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000080;
+}
+
+.custom-select option[value=""] {
+  color: #999;
+}

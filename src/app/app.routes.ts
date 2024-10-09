@@ -18,5 +18,5 @@ export const routes: Routes = [
   { path: 'ngIfDemo', component: NgIfDemoComponent },
   { path: 'halcyon', component: HalcyonComponent },
 
-  { path: '', redirectTo: '/halcyon', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
 ];
