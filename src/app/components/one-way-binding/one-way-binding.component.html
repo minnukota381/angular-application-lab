@@ -1,11 +1,10 @@
-<!-- app.component.html -->
 <div class="container">
   <h3>{{ title }}</h3> <!-- Interpolation -->
 
-  <!-- Using a template reference variable to access the input value -->
+  <!-- Input field to update the name -->
   <input #nameInput (input)="updateName(nameInput.value)" placeholder="Enter your name" class="input-field" /> <!-- Event binding -->
 
-  <!-- Display the updated name -->
+  <!-- Display the updated name from input field -->
   <p class="greeting">Hello, {{ name }}!</p> <!-- Interpolation -->
 
   <!-- Property binding for button disabled state -->

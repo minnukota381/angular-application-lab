@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-one-way-binding',
@@ -11,8 +11,11 @@ export class OneWayBindingComponent {
   name: string = 'Helcy';
   buttonDisabled: boolean = true;
 
+  // Update the name from input
   updateName(name: string) {
     this.name = name;
     this.buttonDisabled = this.name.trim() === '';
   }
+
+
 }
