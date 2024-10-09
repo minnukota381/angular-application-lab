@@ -1,0 +1,82 @@
+.container {
+  width: 80%;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #000080;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #ff9800;
+  margin-top: 20px;
+}
+
+#personSelect {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000080;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#personSelect:hover {
+  border-color: #ff9800;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #000080;
+  text-align: left;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #000080;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+table tr:hover {
+  background-color: #ff9800;
+  color: white;
+  cursor: pointer;
+}
+
+.selected-details {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #000080;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected-details p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.selected-details p strong {
+  color: #000080;
+}
