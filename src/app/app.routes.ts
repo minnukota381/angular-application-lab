@@ -1,3 +1,4 @@
+import { NgIfDemoComponent } from './components/ngif-demo/ngif-demo.component';
 import { Routes } from '@angular/router';
 import { OneWayBindingComponent } from './components/one-way-binding/one-way-binding.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'ngfordemo', component: NgForDemoComponent },
   { path: 'ngModelDemo', component: NgModelDemoComponent },
+  { path: 'ngIfDemo', component: NgIfDemoComponent },
   { path: 'halcyon', component: HalcyonComponent },
 
   { path: '', redirectTo: '/halcyon', pathMatch: 'full' },

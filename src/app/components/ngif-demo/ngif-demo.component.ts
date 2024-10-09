@@ -3,10 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ngif-demo',
   standalone: true,
-  imports: [],
   templateUrl: './ngif-demo.component.html',
-  styleUrl: './ngif-demo.component.css'
+  styleUrls: ['./ngif-demo.component.css'],
 })
-export class NgifDemoComponent {
+export class NgIfDemoComponent {
+  title: string = 'ngIf Demo';
 
+  isMessageVisible: boolean = false;
+
+  toggleMessage() {
+    this.isMessageVisible = !this.isMessageVisible;
+  }
 }

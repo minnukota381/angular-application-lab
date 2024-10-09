@@ -1,1 +1,9 @@
-<p>ngif-demo works!</p>
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <!-- Button to toggle the message visibility -->
+  <button (click)="toggleMessage()">Toggle Message</button>
+
+  <!-- Conditional display of the message using *ngIf -->
+  <p *ngIf="isMessageVisible">This message is conditionally displayed using *ngIf!</p>
+</div>

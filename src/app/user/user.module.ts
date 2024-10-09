@@ -6,6 +6,7 @@ import { TwoWayBindingComponent } from '../components/two-way-binding/two-way-bi
 import { SignalBindingComponent } from '../components/signal-binding/signal-binding.component';
 import { NgForDemoComponent } from '../components/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from '../components/ng-model-demo/ng-model-demo.component';
+import { NgIfDemoComponent } from '../components/ngif-demo/ngif-demo.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { NgModelDemoComponent } from '../components/ng-model-demo/ng-model-demo.
     TwoWayBindingComponent,
     SignalBindingComponent,
     NgForDemoComponent,
-    NgModelDemoComponent
+    NgModelDemoComponent,
+    NgIfDemoComponent
   ],
 })
 export class UserModule {}
