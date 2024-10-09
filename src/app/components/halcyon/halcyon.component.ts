@@ -10,6 +10,12 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule, FormsModule],
 })
 export class HalcyonComponent {
+
+   message: string = "Hello, Angular with TypeScript!";
+
+  sayHello(): void {
+    alert(this.message);
+  } 
   number1: number = 0;
   number2: number = 0;
   result: number = 0;

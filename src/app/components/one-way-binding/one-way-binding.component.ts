@@ -7,7 +7,7 @@ import { Component, signal } from '@angular/core';
   styleUrls: ['./one-way-binding.component.css'],
 })
 export class OneWayBindingComponent {
-  title: string = 'Interpolation : Welcome to One-Way Data Binding in Angular!';
+  title: string = 'Interpolation : Welcome to One-Way Data Binding in Angular!'; 
   name: string = 'Helcy';
   buttonDisabled: boolean = true;
 
@@ -16,6 +16,4 @@ export class OneWayBindingComponent {
     this.name = name;
     this.buttonDisabled = this.name.trim() === '';
   }
-
-
 }

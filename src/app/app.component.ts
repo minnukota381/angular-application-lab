@@ -6,6 +6,7 @@ import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-bin
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./components/login/login.component";
 import { NgForDemoComponent } from "./components/ng-for-demo/ng-for-demo.component";
+import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.component";
 
 // @Component({
 //   selector: 'app-root',
@@ -23,6 +24,6 @@ import { NgForDemoComponent } from "./components/ng-for-demo/ng-for-demo.compone
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent],
+  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent],
 })
 export class AppComponent {}
