@@ -20,10 +20,10 @@ export class LoginComponent {
   isButtonDisabled: boolean = false;
 
   // Define correct credentials (for demonstration purposes)
-  private correctUsername: string = 'minnu';
-  private correctPassword: string = 'pwd';
+  private readonly correctUsername: string = 'minnu';
+  private readonly correctPassword: string = 'pwd';
 
-  constructor(private router: Router) {}
+  constructor(private readonly router: Router) {}
 
   onLogin() {
     this.loginClickCount++;
@@ -33,10 +33,8 @@ export class LoginComponent {
       this.username === this.correctUsername &&
       this.password === this.correctPassword
     ) {
-      // Set login state in localStorage (or use a service for better practice)
       localStorage.setItem('isLoggedIn', 'true');
 
-      // Navigate to Halcyon page on successful login
       this.router.navigate(['/halcyon']);
     } else {
       if (this.attemptsLeft > 0) {
@@ -51,8 +49,8 @@ export class LoginComponent {
   clearFields() {
     this.username = '';
     this.password = '';
-    this.attemptsLeft = this.maxAttempts; // Reset attempts
-    this.showLoginMessage = ''; // Clear message
-    this.isButtonDisabled = false; // Enable button again
+    this.attemptsLeft = this.maxAttempts;
+    this.showLoginMessage = '';
+    this.isButtonDisabled = false;
   }
 }
