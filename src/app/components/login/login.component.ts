@@ -19,7 +19,6 @@ export class LoginComponent {
   showLoginMessage: string = '';
   isButtonDisabled: boolean = false;
 
-  // Define correct credentials (for demonstration purposes)
   private readonly correctUsername: string = 'minnu';
   private readonly correctPassword: string = 'pwd';
 
