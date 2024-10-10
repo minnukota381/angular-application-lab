@@ -1,16 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import {
   CanActivate,
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
   Router,
 } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
-  constructor(private router: Router) {}
+  constructor(
+    private readonly router: Router,
+    @Inject(PLATFORM_ID) private readonly platformId: Object
+  ) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -19,16 +23,18 @@ export class AuthGuard implements CanActivate {
     const isLoggedIn = this.checkLogin();
 
     if (isLoggedIn) {
-      return true; // Allow access
+      return true;
     } else {
-      this.router.navigate(['/login']); // Redirect to login if not authenticated
-      return false; // Prevent access
+      this.router.navigate(['/login']);
+      return false;
     }
   }
 
   checkLogin(): boolean {
-    // Check login state from localStorage (replace with better logic if needed)
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    return isLoggedIn === 'true'; // Return true if logged in
+    if (isPlatformBrowser(this.platformId)) {
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+      return isLoggedIn;
+    }
+    return false;
   }
 }

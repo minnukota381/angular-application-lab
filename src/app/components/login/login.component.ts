@@ -32,14 +32,14 @@ export class LoginComponent {
       this.username === this.correctUsername &&
       this.password === this.correctPassword
     ) {
-      localStorage.setItem('isLoggedIn', 'true');
-
-      this.router.navigate(['/halcyon']);
+      // Set logged-in state in localStorage
+      localStorage.setItem('isLoggedIn', 'true'); // Ensure this is called on successful login
+      this.router.navigate(['/halcyon']); // Redirect to halcyon
     } else {
       if (this.attemptsLeft > 0) {
         this.showLoginMessage = `${this.attemptsLeft} attempt(s) left.`;
       } else {
-        this.isButtonDisabled = true;
+        this.isButtonDisabled = true; // Disable button after max attempts
         this.showLoginMessage = 'You are restricted from logging in.';
       }
     }

@@ -20,10 +20,9 @@ export const routes: Routes = [
   { path: 'loginAu', component: LoginAuComponent },
   { path: 'ngfordemo', component: NgForDemoComponent },
   { path: 'ngModelDemo', component: NgModelDemoComponent },
-  { path: 'userList', component : UserListComponent},
+  { path: 'userList', component: UserListComponent },
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
-
 
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
