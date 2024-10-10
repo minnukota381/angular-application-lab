@@ -1,65 +1,80 @@
-/* General styling for the navigation bar */
+/* General Styling for the Navigation */
 nav {
-  background-color: #000080; /* Navy blue background */
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-/* Styling for the unordered list */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-around; /* Evenly spaced items */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for the navigation area */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-/* Styling for individual list items */
-nav ul li {
-  position: relative;
+/* Styling for each module card */
+.module {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for individual modules */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Styling for anchor links */
-nav ul li a {
+/* Hover effect on the modules */
+.module:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevate on hover */
+}
+
+/* Heading styling for modules */
+.module h3 {
+  color: #000080;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #000080;
+  padding-bottom: 10px;
+}
+
+/* Remove default list styling and add padding */
+.module ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for list items */
+.module ul li {
+  margin-bottom: 10px;
+}
+
+/* Link styling */
+.module ul li a {
   text-decoration: none;
-  color: white; /* White text */
-  padding: 10px 15px;
-  display: block;
+  color: #000080; /* Navy blue text */
   font-weight: bold;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 10px;
+  display: block;
+  text-align: center;
   border-radius: 4px;
-  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect for links */
-nav ul li a:hover {
-  background-color: #ffffff;
-  color: #000080;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.module ul li a:hover {
+  background-color: #000080;
+  color: white;
 }
 
-/* Active link styling */
-nav ul li a.active {
-  background-color: #ffffff;
-  color: #000080;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Adding some spacing below the nav bar */
-.router-outlet {
-  margin-top: 20px;
-}
-
-/* Responsive design: stacking items vertically on smaller screens */
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
-  nav ul {
+  nav {
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul li {
-    margin-bottom: 10px;
+  .module {
+    width: 100%;
   }
 }
