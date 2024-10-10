@@ -1,14 +1,21 @@
-<form (ngSubmit)="onLogin()">
-  <label for="username">Username:</label>
-  <input type="text" id="username" [(ngModel)]="username" name="username" required />
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="onLogin()" class="login-form">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" required />
+    </div>
 
-  <label for="password">Password:</label>
-  <input type="password" id="password" [(ngModel)]="password" name="password" required />
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required />
+    </div>
 
-  <button type="submit" [disabled]="isButtonDisabled">Login</button> <!-- Disable button -->
-</form>
+    <button type="submit" [disabled]="isButtonDisabled">Login</button>
+    <button type="button" (click)="clearFields()">Clear</button>
+  </form>
 
-<!-- Use ngIf to conditionally display the login message -->
-<div *ngIf="showLoginMessage">
-  <h3>{{ showLoginMessage }}</h3>
+  <div *ngIf="showLoginMessage">
+    <h3>{{ showLoginMessage }}</h3>
+  </div>
 </div>

@@ -7,6 +7,7 @@ import { HalcyonComponent } from './components/halcyon/halcyon.component';
 import { NgForDemoComponent } from './components/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from './components/ng-model-demo/ng-model-demo.component';
 import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
@@ -16,7 +17,7 @@ export const routes: Routes = [
   { path: 'ngfordemo', component: NgForDemoComponent },
   { path: 'ngModelDemo', component: NgModelDemoComponent },
   { path: 'ngIfDemo', component: NgIfDemoComponent },
-  { path: 'halcyon', component: HalcyonComponent },
+  { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
 
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
