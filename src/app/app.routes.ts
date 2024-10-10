@@ -8,15 +8,18 @@ import { NgForDemoComponent } from './components/ng-for-demo/ng-for-demo.compone
 import { NgModelDemoComponent } from './components/ng-model-demo/ng-model-demo.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
+import { LoginAuComponent } from './components/login-au/login-au.component';
+import { LoginGuard } from './guards/login.guard';
 
 export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
   { path: 'two-way-binding', component: TwoWayBindingComponent },
   { path: 'signal-binding', component: SignalBindingComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'loginAu', component: LoginAuComponent },
   { path: 'ngfordemo', component: NgForDemoComponent },
   { path: 'ngModelDemo', component: NgModelDemoComponent },
-  { path: 'ngIfDemo', component: NgIfDemoComponent },
+  { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
 
   { path: '', redirectTo: '', pathMatch: 'full' },

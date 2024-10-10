@@ -8,6 +8,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { NgForDemoComponent } from "./components/ng-for-demo/ng-for-demo.component";
 import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.component";
 import { UserListComponent } from "./components/user-list/user-list.component";
+import { LoginAuComponent } from "./components/login-au/login-au.component";
 
 // @Component({
 //   selector: 'app-root',
@@ -25,6 +26,6 @@ import { UserListComponent } from "./components/user-list/user-list.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent],
+  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent, LoginAuComponent],
 })
 export class AppComponent {}
