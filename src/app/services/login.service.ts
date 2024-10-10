@@ -16,7 +16,7 @@ export class LoginService {
    * Otherwise, it sets isAuthenticated to false and returns false.
    */
   login(username: string, password: string): boolean {
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'helcy' && password === 'halcyon') {
       this.isAuthenticated = true; // Set the login state to true on successful login
       return true; // Return true to indicate successful login
     }
