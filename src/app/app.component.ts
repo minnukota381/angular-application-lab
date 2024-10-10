@@ -7,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./components/login/login.component";
 import { NgForDemoComponent } from "./components/ng-for-demo/ng-for-demo.component";
 import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.component";
+import { UserListComponent } from "./components/user-list/user-list.component";
 
 // @Component({
 //   selector: 'app-root',
@@ -24,6 +25,6 @@ import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.c
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent],
+  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent],
 })
 export class AppComponent {}
