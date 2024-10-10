@@ -13,6 +13,17 @@ import { LoginAuComponent } from './components/login-au/login-au.component';
 import { LoginGuard } from './guards/login.guard';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+
+@NgModule({
+  imports: [
+    HttpClientModule,
+  ],
+  exports: [
+  ],
+})
+export class AppRoutes {}
 
 export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
