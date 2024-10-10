@@ -12,9 +12,9 @@ export class NgForDemoComponent {
   // Sample data array
   dataArray: { id: number; name: string; age: number }[] = [
     { id: 1, name: 'Minnu', age: 28 },
-    { id: 2, name: 'Hello', age: 34 },
+    { id: 2, name: 'Helcy', age: 34 },
     { id: 3, name: 'NeptunE', age: 45 },
-    { id: 4, name: 'Emily', age: 22 },
+    { id: 4, name: 'Halcyon', age: 22 },
   ];
 
   // Variable to hold the selected person's details
