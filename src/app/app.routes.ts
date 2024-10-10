@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { LoginAuComponent } from './components/login-au/login-au.component';
 import { LoginGuard } from './guards/login.guard';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
@@ -19,8 +20,10 @@ export const routes: Routes = [
   { path: 'loginAu', component: LoginAuComponent },
   { path: 'ngfordemo', component: NgForDemoComponent },
   { path: 'ngModelDemo', component: NgModelDemoComponent },
+  { path: 'userList', component : UserListComponent},
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
+
 
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
