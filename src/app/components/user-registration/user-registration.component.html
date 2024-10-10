@@ -1,0 +1,51 @@
+<form #registrationForm="ngForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Username</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      [(ngModel)]="username"
+      required
+    />
+    <div
+      *ngIf="registrationForm.controls['username']?.invalid && registrationForm.controls['username']?.touched"
+    >
+      Username is required.
+    </div>
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="email"
+      required
+    />
+    <div
+      *ngIf="registrationForm.controls['email']?.invalid && registrationForm.controls['email']?.touched"
+    >
+      Email is required.
+    </div>
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="password"
+      required
+    />
+    <div
+      *ngIf="registrationForm.controls['password']?.invalid && registrationForm.controls['password']?.touched"
+    >
+      Password is required.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+</form>

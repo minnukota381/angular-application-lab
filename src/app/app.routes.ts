@@ -1,3 +1,4 @@
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { NgIfDemoComponent } from './components/ngif-demo/ngif-demo.component';
 import { Routes } from '@angular/router';
 import { OneWayBindingComponent } from './components/one-way-binding/one-way-binding.component';
@@ -25,5 +26,6 @@ export const routes: Routes = [
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
   { path: 'userform', component: UserFormComponent },
+  { path: 'userregistration', component: UserFormComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
