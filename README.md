@@ -1,4 +1,4 @@
-# Angular Course (4 Credits)
+# Angular
 
 ## Course Overview
 
@@ -169,7 +169,3 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Deployment options (Firebase, AWS, Heroku).
   - Progressive Web Apps (PWAs).
   - Best practices for deploying Angular applications.
-
-## Conclusion
-
-This course will equip you with the necessary skills to build robust and scalable applications using Angular. Happy coding!
