@@ -11,6 +11,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { LoginAuComponent } from './components/login-au/login-au.component';
 import { LoginGuard } from './guards/login.guard';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
 
 export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
@@ -23,6 +24,6 @@ export const routes: Routes = [
   { path: 'userList', component: UserListComponent },
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
-
+  { path: 'userform', component: UserFormComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
