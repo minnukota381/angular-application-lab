@@ -9,6 +9,7 @@ import { NgForDemoComponent } from "./components/ng-for-demo/ng-for-demo.compone
 import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.component";
 import { UserListComponent } from "./components/user-list/user-list.component";
 import { LoginAuComponent } from "./components/login-au/login-au.component";
+import { UserFormComponent } from "./components/user-form/user-form.component";
 
 // @Component({
 //   selector: 'app-root',
@@ -26,6 +27,6 @@ import { LoginAuComponent } from "./components/login-au/login-au.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent, LoginAuComponent],
+  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent, LoginAuComponent, UserFormComponent],
 })
 export class AppComponent {}
