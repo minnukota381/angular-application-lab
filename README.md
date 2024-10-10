@@ -4,9 +4,7 @@
 
 This course provides a comprehensive introduction to Angular, covering its architecture, key features, and best practices. By the end of the course, you'll have the skills to build, test, and deploy Angular applications effectively.
 
-## Course Structure
-
-### Module 1: Introduction to Angular (Week 1)
+### Module 1: Introduction to Angular
 
 - **Objectives:**
   - Understand the basics of Angular.
@@ -18,7 +16,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Creating a new Angular project with Angular CLI.
   - Angular project structure.
 
-### Module 2: TypeScript Basics (Week 2)
+### Module 2: TypeScript Basics
 
 - **Objectives:**
   - Learn the basics of TypeScript.
@@ -30,7 +28,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Classes and interfaces.
   - TypeScript in Angular.
 
-### Module 3: Angular Architecture (Week 3)
+### Module 3: Angular Architecture
 
 - **Objectives:**
   - Understand the core building blocks of Angular applications.
@@ -40,7 +38,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Creating and using Angular modules.
   - Angular application structure and best practices.
 
-### Module 4: Data Binding and Directives (Week 4)
+### Module 4: Data Binding and Directives
 
 - **Objectives:**
   - Master data binding and use of directives in Angular.
@@ -50,7 +48,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Built-in directives (ngIf, ngFor, ngClass, ngStyle).
   - Custom directives.
 
-### Module 5: Component Communication (Week 5)
+### Module 5: Component Communication
 
 - **Objectives:**
   - Learn to manage communication between components.
@@ -60,7 +58,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Parent-child component communication.
   - ViewChild and ContentChild decorators.
 
-### Module 6: Services and Dependency Injection (Week 6)
+### Module 6: Services and Dependency Injection
 
 - **Objectives:**
   - Understand the role of services and dependency injection in Angular.
@@ -70,7 +68,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Hierarchical injectors.
   - Managing application-wide services.
 
-### Module 7: Routing and Navigation (Week 7)
+### Module 7: Routing and Navigation
 
 - **Objectives:**
   - Master the routing and navigation mechanisms in Angular.
@@ -80,7 +78,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Route guards and lazy loading.
   - Child routes and nested routing.
 
-### Module 8: Angular Forms (Week 8)
+### Module 8: Angular Forms
 
 - **Objectives:**
   - Handle forms and user inputs in Angular applications.
@@ -90,7 +88,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Form validation and custom validators.
   - FormBuilder and form arrays.
 
-### Module 9: HTTP Client (Week 9)
+### Module 9: HTTP Client
 
 - **Objectives:**
   - Learn to make HTTP requests and handle responses.
@@ -100,7 +98,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Handling HTTP responses and errors.
   - Interceptors and authentication.
 
-### Module 10: Observables and RxJS (Week 10)
+### Module 10: Observables and RxJS
 
 - **Objectives:**
   - Understand and use observables and RxJS in Angular.
@@ -110,7 +108,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Common RxJS operators (map, filter, mergeMap, switchMap).
   - Using observables with Angular HttpClient.
 
-### Module 11: Advanced Components and Directives (Week 11)
+### Module 11: Advanced Components and Directives
 
 - **Objectives:**
   - Develop advanced components and custom directives.
@@ -120,7 +118,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Custom attribute and structural directives.
   - Advanced component styling.
 
-### Module 12: State Management (Week 12)
+### Module 12: State Management
 
 - **Objectives:**
   - Manage application state effectively in Angular.
@@ -130,7 +128,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - State management with NgRx (Store, Effects, Reducers).
   - Best practices for state management.
 
-### Module 13: Testing Angular Applications (Week 13)
+### Module 13: Testing Angular Applications
 
 - **Objectives:**
   - Learn to test Angular applications.
@@ -140,7 +138,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Component testing with TestBed.
   - End-to-end testing with Protractor.
 
-### Module 14: Performance Optimization (Week 14)
+### Module 14: Performance Optimization
 
 - **Objectives:**
   - Optimize the performance of Angular applications.
@@ -150,7 +148,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Lazy loading and preloading modules.
   - Performance monitoring and profiling tools.
 
-### Module 15: Internationalization and Accessibility (Week 15)
+### Module 15: Internationalization and Accessibility
 
 - **Objectives:**
   - Implement internationalization and accessibility features.
@@ -160,7 +158,7 @@ This course provides a comprehensive introduction to Angular, covering its archi
   - Angular i18n tools and techniques.
   - Accessibility best practices and tools.
 
-### Module 16: Deployment and Best Practices (Week 16)
+### Module 16: Deployment and Best Practices
 
 - **Objectives:**
   - Prepare Angular applications for deployment.
