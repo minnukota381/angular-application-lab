@@ -26,6 +26,6 @@ export const routes: Routes = [
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
   { path: 'userform', component: UserFormComponent },
-  { path: 'userregistration', component: UserFormComponent },
+  { path: 'userregistration', component: UserRegistrationComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
