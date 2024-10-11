@@ -15,6 +15,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { StudentListComponent } from './components/student-list/student-list.component';
 
 @NgModule({
   imports: [
@@ -38,5 +39,6 @@ export const routes: Routes = [
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
   { path: 'userform', component: UserFormComponent },
   { path: 'userregistration', component: UserRegistrationComponent },
+  { path: 'students', component: StudentListComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
