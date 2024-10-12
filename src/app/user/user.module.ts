@@ -7,6 +7,7 @@ import { SignalBindingComponent } from '../components/signal-binding/signal-bind
 import { NgForDemoComponent } from '../components/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from '../components/ng-model-demo/ng-model-demo.component';
 import { NgIfDemoComponent } from '../components/ngif-demo/ngif-demo.component';
+import { StudentListComponent } from '../components/student-list/student-list.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { NgIfDemoComponent } from '../components/ngif-demo/ngif-demo.component';
     SignalBindingComponent,
     NgForDemoComponent,
     NgModelDemoComponent,
-    NgIfDemoComponent
+    NgIfDemoComponent,
+    StudentListComponent
   ],
 })
 export class UserModule {}

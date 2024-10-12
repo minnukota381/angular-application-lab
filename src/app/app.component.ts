@@ -10,6 +10,7 @@ import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.c
 import { UserListComponent } from "./components/user-list/user-list.component";
 import { LoginAuComponent } from "./components/login-au/login-au.component";
 import { UserFormComponent } from "./components/user-form/user-form.component";
+import { StudentListComponent } from "./components/student-list/student-list.component";
 
 // @Component({
 //   selector: 'app-root',
@@ -27,6 +28,6 @@ import { UserFormComponent } from "./components/user-form/user-form.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent, LoginAuComponent, UserFormComponent],
+  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent, LoginAuComponent, UserFormComponent, StudentListComponent],
 })
 export class AppComponent {}
