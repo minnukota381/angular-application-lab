@@ -15,7 +15,7 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginAuComponent } from './components/login-au/login-au.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
-import { StudentListComponent } from './components/student-list/student-list.component';
+// import { StudentListComponent } from './components/student-list/student-list.component';
 
 // Import Guards
 import { AuthGuard } from './guards/auth.guard';
@@ -24,7 +24,7 @@ import { LoginGuard } from './guards/login.guard';
 @NgModule({
   imports: [
     HttpClientModule,
-    RouterModule.forRoot(routes), // Add the RouterModule with the routes
+    // RouterModule.forRoot(routes), // Add the RouterModule with the routes
   ],
   exports: [RouterModule], // Export RouterModule
 })
@@ -43,6 +43,6 @@ export const routes: Routes = [
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
   { path: 'userform', component: UserFormComponent },
   { path: 'userregistration', component: UserRegistrationComponent },
-  { path: 'students', component: StudentListComponent },
+  // { path: 'students', component: StudentListComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
