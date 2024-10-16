@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-// Import Components
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { NgIfDemoComponent } from './components/ngif-demo/ngif-demo.component';
 import { OneWayBindingComponent } from './components/one-way-binding/one-way-binding.component';
@@ -17,7 +16,6 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 // import { StudentListComponent } from './components/student-list/student-list.component';
 
-// Import Guards
 import { AuthGuard } from './guards/auth.guard';
 import { LoginGuard } from './guards/login.guard';
 
