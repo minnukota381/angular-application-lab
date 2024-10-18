@@ -6,9 +6,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 1: Introduction to Angular
 
-- **Objectives:**
-  - Understand the basics of Angular.
-  - Set up and configure an Angular project.
 - **Topics:**
   - Overview of Angular framework.
   - Benefits and use cases of Angular.
@@ -18,9 +15,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 2: TypeScript Basics
 
-- **Objectives:**
-  - Learn the basics of TypeScript.
-  - Understand how TypeScript integrates with Angular.
 - **Topics:**
   - Introduction to TypeScript.
   - TypeScript features and syntax.
@@ -30,8 +24,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 3: Angular Architecture
 
-- **Objectives:**
-  - Understand the core building blocks of Angular applications.
 - **Topics:**
   - Components, templates, and modules.
   - Component lifecycle hooks.
@@ -40,8 +32,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 4: Data Binding and Directives
 
-- **Objectives:**
-  - Master data binding and use of directives in Angular.
 - **Topics:**
   - Property binding and event binding.
   - Two-way data binding with ngModel.
@@ -50,8 +40,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 5: Component Communication
 
-- **Objectives:**
-  - Learn to manage communication between components.
 - **Topics:**
   - Input and output decorators.
   - Event emitters.
@@ -60,8 +48,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 6: Services and Dependency Injection
 
-- **Objectives:**
-  - Understand the role of services and dependency injection in Angular.
 - **Topics:**
   - Creating and using services.
   - Dependency injection in Angular.
@@ -70,8 +56,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 7: Routing and Navigation
 
-- **Objectives:**
-  - Master the routing and navigation mechanisms in Angular.
 - **Topics:**
   - Configuring routes.
   - RouterLink and router-outlet.
@@ -80,8 +64,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 8: Angular Forms
 
-- **Objectives:**
-  - Handle forms and user inputs in Angular applications.
 - **Topics:**
   - Template-driven forms.
   - Reactive forms.
@@ -90,8 +72,6 @@ This course provides a comprehensive introduction to Angular, covering its archi
 
 ### Module 9: HTTP Client
 
-- **Objectives:**
-  - Learn to make HTTP requests and handle responses.
 - **Topics:**
   - Introduction to Angular HttpClient.
   - Performing GET, POST, PUT, DELETE requests.
