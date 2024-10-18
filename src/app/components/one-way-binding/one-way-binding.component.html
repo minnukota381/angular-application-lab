@@ -4,13 +4,11 @@
   <!-- Input field to update the name -->
   <input #nameInput (input)="updateName(nameInput.value)" placeholder="Enter your name" class="input-field" /> <!-- Event binding -->
 
-  <!-- Display the updated name from input field -->
   <p class="greeting">Hello, {{ name }}!</p> <!-- Interpolation -->
 
-  <!-- Property binding for button disabled state -->
-  <button [disabled]="buttonDisabled" class="submit-button">Submit</button> <!-- Property binding -->
+  <!-- Property binding -->
+  <button [disabled]="buttonDisabled" class="submit-button">Submit</button>
 
-  <!-- src/app/components/event-binding/event-binding.component.html -->
 <h1>Event Binding Example</h1>
 <button (click)="increment()">Click me!</button> <!-- Event binding to increment count -->
 <p>You clicked the button {{ count }} times.</p> <!-- Interpolation to display count -->
