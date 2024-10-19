@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [],
   templateUrl: './task-list.component.html',
-  styleUrl: './task-list.component.css'
+  styleUrls: ['./task-list.component.css'],
 })
 export class TaskListComponent {
-
+  @Input() tasks!: string[]; // Receive tasks from the parent
 }
