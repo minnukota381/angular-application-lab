@@ -14,6 +14,8 @@ import { LoginComponent } from './components/Services-DI/login/login.component';
 import { LoginAuComponent } from './components/Routing/login-au/login-au.component';
 import { UserListComponent } from './components/Routing/user-list/user-list.component';
 import { UserFormComponent } from './components/AngularForms/user-form/user-form.component';
+import { NgClassComponent } from './components/Built-in-directives/ng-class/ng-class.component';
+import { NgStyleComponent } from './components/Built-in-directives/ng-style/ng-style.component';
 // import { StudentListComponent } from './components/student-list/student-list.component';
 
 import { AuthGuard } from './guards/auth.guard';
@@ -33,8 +35,10 @@ export const routes: Routes = [
   { path: 'two-way-binding', component: TwoWayBindingComponent },
   { path: 'signal-binding', component: SignalBindingComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'ngclass', component: NgClassComponent},
   { path: 'loginAu', component: LoginAuComponent },
   { path: 'ngfordemo', component: NgForDemoComponent },
+  { path:  'ngstyle', component: NgStyleComponent},
   { path: 'ngModelDemo', component: NgModelDemoComponent },
   { path: 'userList', component: UserListComponent },
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },

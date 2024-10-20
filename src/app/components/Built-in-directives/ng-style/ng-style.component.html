@@ -1,1 +1,9 @@
-<p>ng-style works!</p>
+<div class="score-container">
+  <h1>Score Tracker</h1>
+
+  <button (click)="generateScore()">Generate Random Score</button>
+
+  <p [ngStyle]="{ 'color': getTextColor(), 'background-color': getBackgroundColor() }">
+    Your Score: {{ score }}
+  </p>
+</div>
