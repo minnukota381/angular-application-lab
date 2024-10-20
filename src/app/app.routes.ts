@@ -18,6 +18,8 @@ import { NgClassComponent } from './components/Built-in-directives/ng-class/ng-c
 import { NgStyleComponent } from './components/Built-in-directives/ng-style/ng-style.component';
 import { ParentComponent } from './components/Component-Communication/parent/parent.component';
 import { ChildComponent } from './components/Component-Communication/child/child.component';
+import { TaskListComponent } from './components/Component-Communication/task-list/task-list.component';
+import { TodoListComponent } from './components/Component-Communication/todo-list/todo-list.component';
 // import { StudentListComponent } from './components/student-list/student-list.component';
 
 import { AuthGuard } from './guards/auth.guard';
@@ -49,6 +51,8 @@ export const routes: Routes = [
   { path: 'userregistration', component: UserRegistrationComponent },
   // { path: 'students', component: StudentListComponent },
   { path: 'parent', component: ParentComponent },
-  { path: 'child', component: ChildComponent},
+  { path: 'child', component: ChildComponent },
+  { path: 'tasklist', component: TaskListComponent },
+  { path: 'todolist', component: TodoListComponent},
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];

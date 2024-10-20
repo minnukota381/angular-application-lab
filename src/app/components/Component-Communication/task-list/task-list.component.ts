@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
   imports:[CommonModule]
 })
 export class TaskListComponent {
-  @Input() tasks!: string[]; // Receive tasks from the parent
+  @Input() tasks!: string[];
 }

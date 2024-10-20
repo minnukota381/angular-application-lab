@@ -11,14 +11,13 @@ import { FormsModule } from '@angular/forms';
   imports: [TaskListComponent, CommonModule, FormsModule],
 })
 export class TodoListComponent {
-  tasks: string[] = []; // Array to hold tasks
-  newTask: string = ''; // Input for new task
+  tasks: string[] = [];
+  newTask: string = '';
 
-  // Method to add a new task
   addTask() {
     if (this.newTask.trim()) {
       this.tasks.push(this.newTask.trim());
-      this.newTask = ''; // Clear the input field
+      this.newTask = '';
     }
   }
 }
