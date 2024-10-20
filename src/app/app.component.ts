@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { HalcyonComponent } from './components/halcyon/halcyon.component';
 
-import { OneWayBindingComponent } from "./components/one-way-binding/one-way-binding.component";
-import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
+import { OneWayBindingComponent } from './components/Data-Binding/one-way-binding/one-way-binding.component';
+import { TwoWayBindingComponent } from './components/Data-Binding/two-way-binding/two-way-binding.component';
 import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from "./components/login/login.component";
-import { NgForDemoComponent } from "./components/ng-for-demo/ng-for-demo.component";
-import { NgModelDemoComponent } from "./components/ng-model-demo/ng-model-demo.component";
-import { UserListComponent } from "./components/user-list/user-list.component";
-import { LoginAuComponent } from "./components/login-au/login-au.component";
-import { UserFormComponent } from "./components/user-form/user-form.component";
-import { HelcyComponent } from "./components/helcy/helcy.component";
+import { LoginComponent } from './components/Services-DI/login/login.component';
+import { NgForDemoComponent } from './components/Built-in-directives/ng-for-demo/ng-for-demo.component';
+import { NgModelDemoComponent } from './components/Data-Binding/ng-model-demo/ng-model-demo.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { LoginAuComponent } from './components/login-au/login-au.component';
+import { UserFormComponent } from './components/AngularForms/user-form/user-form.component';
+import { HelcyComponent } from './components/helcy/helcy.component';
 // import { StudentListComponent } from "./components/student-list/student-list.component";
 
 // @Component({
@@ -29,6 +29,16 @@ import { HelcyComponent } from "./components/helcy/helcy.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, HalcyonComponent, LoginComponent, NgForDemoComponent, NgModelDemoComponent, UserListComponent, LoginAuComponent, UserFormComponent, HelcyComponent],
+  imports: [
+    RouterOutlet,
+    HalcyonComponent,
+    LoginComponent,
+    NgForDemoComponent,
+    NgModelDemoComponent,
+    UserListComponent,
+    LoginAuComponent,
+    UserFormComponent,
+    HelcyComponent,
+  ],
 })
 export class AppComponent {}
