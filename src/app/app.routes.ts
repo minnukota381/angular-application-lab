@@ -11,8 +11,8 @@ import { HalcyonComponent } from './components/Data-Binding/halcyon/halcyon.comp
 import { NgForDemoComponent } from './components/Built-in-directives/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from './components/Data-Binding/ng-model-demo/ng-model-demo.component';
 import { LoginComponent } from './components/Services-DI/login/login.component';
-import { LoginAuComponent } from './components/login-au/login-au.component';
-import { UserListComponent } from './components/user-list/user-list.component';
+import { LoginAuComponent } from './components/Routing/login-au/login-au.component';
+import { UserListComponent } from './components/Routing/user-list/user-list.component';
 import { UserFormComponent } from './components/AngularForms/user-form/user-form.component';
 // import { StudentListComponent } from './components/student-list/student-list.component';
 
@@ -24,7 +24,7 @@ import { LoginGuard } from './guards/login.guard';
     HttpClientModule,
     // RouterModule.forRoot(routes), // Add the RouterModule with the routes
   ],
-  exports: [RouterModule], // Export RouterModule
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
 
