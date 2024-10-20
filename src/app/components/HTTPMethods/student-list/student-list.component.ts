@@ -1,14 +1,13 @@
-// src/app/services/student.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Student } from '../../../models/student.model'; // Adjust the import as needed
+import { Student } from '../../../models/student.model';
 
 @Injectable({
-  providedIn: 'root', // This provides the service in the root injector
+  providedIn: 'root',
 })
 export class StudentService {
-  private readonly apiUrl = 'http://localhost:8080/api/students'; // Adjust as per your Spring Boot API
+  private readonly apiUrl = 'http://localhost:8080/api/students'; 
 
   constructor(private readonly http: HttpClient) {}
 
