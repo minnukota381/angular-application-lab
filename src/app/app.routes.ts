@@ -16,6 +16,8 @@ import { UserListComponent } from './components/Routing/user-list/user-list.comp
 import { UserFormComponent } from './components/AngularForms/user-form/user-form.component';
 import { NgClassComponent } from './components/Built-in-directives/ng-class/ng-class.component';
 import { NgStyleComponent } from './components/Built-in-directives/ng-style/ng-style.component';
+import { ParentComponent } from './components/Component-Communication/parent/parent.component';
+import { ChildComponent } from './components/Component-Communication/child/child.component';
 // import { StudentListComponent } from './components/student-list/student-list.component';
 
 import { AuthGuard } from './guards/auth.guard';
@@ -46,5 +48,7 @@ export const routes: Routes = [
   { path: 'userform', component: UserFormComponent },
   { path: 'userregistration', component: UserRegistrationComponent },
   // { path: 'students', component: StudentListComponent },
+  { path: 'parent', component: ParentComponent },
+  { path: 'child', component: ChildComponent},
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];
