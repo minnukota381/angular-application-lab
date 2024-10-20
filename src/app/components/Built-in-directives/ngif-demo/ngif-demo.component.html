@@ -7,3 +7,22 @@
   <!-- Conditional display of the message using *ngIf -->
   <p *ngIf="isMessageVisible">This message is conditionally displayed using *ngIf!</p>
 </div>
+
+<div class="form-container">
+  <h1>Angular *ngIf Form Example</h1>
+
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input [(ngModel)]="name" type="text" id="name" placeholder="Enter your name">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input [(ngModel)]="email" type="email" id="email" placeholder="Enter your email">
+  </div>
+
+  <!-- Conditionally display the submit button -->
+  <button *ngIf="isFormFilled()" (click)="submitForm()">Submit</button>
+
+  <p *ngIf="!isFormFilled()">Please fill in all fields to submit the form.</p>
+</div>

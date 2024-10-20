@@ -30,8 +30,6 @@ import { UserFormComponent } from './components/AngularForms/user-form/user-form
   styleUrls: ['./app.component.css'],
   imports: [
     RouterOutlet,
-    OneWayBindingComponent,
-    TwoWayBindingComponent,
     HalcyonComponent,
     LoginComponent,
     NgForDemoComponent,
