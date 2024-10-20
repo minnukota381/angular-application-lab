@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from '../../services/login.service'; // Importing the LoginService for handling authentication logic.
+import { LoginService } from '../../../services/login.service'; // Importing the LoginService for handling authentication logic.
 import { CommonModule } from '@angular/common'; // Common utilities for Angular templates and components.
 import { FormsModule } from '@angular/forms'; // For handling two-way data binding in the template.
 

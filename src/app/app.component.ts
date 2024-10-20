@@ -7,8 +7,8 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './components/Services-DI/login/login.component';
 import { NgForDemoComponent } from './components/Built-in-directives/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from './components/Data-Binding/ng-model-demo/ng-model-demo.component';
-import { UserListComponent } from './components/user-list/user-list.component';
-import { LoginAuComponent } from './components/login-au/login-au.component';
+// import { UserListComponent } from '../components/user-list/user-list.component';
+// import { LoginAuComponent } from './components/login-au/login-au.component';
 import { UserFormComponent } from './components/AngularForms/user-form/user-form.component';
 import { HelcyComponent } from './components/helcy/helcy.component';
 // import { StudentListComponent } from "./components/student-list/student-list.component";
@@ -35,8 +35,8 @@ import { HelcyComponent } from './components/helcy/helcy.component';
     LoginComponent,
     NgForDemoComponent,
     NgModelDemoComponent,
-    UserListComponent,
-    LoginAuComponent,
+    // UserListComponent,
+    // LoginAuComponent,
     UserFormComponent,
     HelcyComponent,
   ],

@@ -7,7 +7,7 @@ import { SignalBindingComponent } from '../components/Data-Binding/signal-bindin
 import { NgForDemoComponent } from '../components/Built-in-directives/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from '../components/Data-Binding/ng-model-demo/ng-model-demo.component';
 import { NgIfDemoComponent } from '../components/Built-in-directives/ngif-demo/ngif-demo.component';
-import { StudentListComponent } from '../components/student-list/student-list.component';
+// import { StudentListComponent } from '../components/HTTPMethods/student-list/student-list.component';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { StudentListComponent } from '../components/student-list/student-list.co
     NgForDemoComponent,
     NgModelDemoComponent,
     NgIfDemoComponent,
-    StudentListComponent,
+    // StudentListComponent,
   ],
 })
 export class UserModule {}
