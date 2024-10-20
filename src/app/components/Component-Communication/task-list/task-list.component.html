@@ -1,6 +1,8 @@
 <div class="task-list">
   <h3>Tasks</h3>
   <ul>
-    <li *ngFor="let task of tasks">{{ task }}</li> <!-- Display tasks -->
+    <li *ngFor="let task of tasks">
+      <app-task [task]="task" (taskCompleted)="onTaskCompleted($event)"></app-task> <!-- Use the Task component for each task -->
+    </li>
   </ul>
 </div>

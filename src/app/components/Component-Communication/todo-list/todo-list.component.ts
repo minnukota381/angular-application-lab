@@ -17,7 +17,7 @@ export class TodoListComponent {
   addTask() {
     if (this.newTask.trim()) {
       this.tasks.push(this.newTask.trim());
-      this.newTask = '';
+      this.newTask = ''; // Clear the input field after adding
     }
   }
 }
