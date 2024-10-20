@@ -11,12 +11,10 @@ import { Component } from '@angular/core';
 export class NgStyleComponent {
   score: number = 0;
 
-  // Generates a random score between 0 and 100
   generateScore(): void {
     this.score = Math.floor(Math.random() * 101);
   }
 
-  // Method to determine text color based on score
   getTextColor(): string {
     if (this.score >= 70) {
       return 'green';
@@ -27,14 +25,13 @@ export class NgStyleComponent {
     }
   }
 
-  // Method to determine background color based on score
   getBackgroundColor(): string {
     if (this.score >= 70) {
-      return '#DFF2BF'; // light green
+      return '#DFF2BF';
     } else if (this.score >= 40) {
-      return '#FFD700'; // gold
+      return '#FFD700';
     } else {
-      return '#FFBABA'; // light red
+      return '#FFBABA';
     }
   }
 }
