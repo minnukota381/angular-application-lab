@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
-import { NgIfDemoComponent } from './components/ngif-demo/ngif-demo.component';
-import { OneWayBindingComponent } from './components/one-way-binding/one-way-binding.component';
-import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
-import { SignalBindingComponent } from './components/signal-binding/signal-binding.component';
+import { UserRegistrationComponent } from './components/AngularForms/user-registration/user-registration.component';
+import { NgIfDemoComponent } from './components/Built-in-directives/ngif-demo/ngif-demo.component';
+import { OneWayBindingComponent } from './components/Data-Binding/one-way-binding/one-way-binding.component';
+import { TwoWayBindingComponent } from './components/Data-Binding/two-way-binding/two-way-binding.component';
+import { SignalBindingComponent } from './components/Data-Binding/signal-binding/signal-binding.component';
 import { HalcyonComponent } from './components/halcyon/halcyon.component';
-import { NgForDemoComponent } from './components/ng-for-demo/ng-for-demo.component';
-import { NgModelDemoComponent } from './components/ng-model-demo/ng-model-demo.component';
-import { LoginComponent } from './components/login/login.component';
+import { NgForDemoComponent } from './components/Built-in-directives/ng-for-demo/ng-for-demo.component';
+import { NgModelDemoComponent } from './components/Data-Binding/ng-model-demo/ng-model-demo.component';
+import { LoginComponent } from './components/Services-DI/login/login.component';
 import { LoginAuComponent } from './components/login-au/login-au.component';
 import { UserListComponent } from './components/user-list/user-list.component';
-import { UserFormComponent } from './components/user-form/user-form.component';
+import { UserFormComponent } from './components/AngularForms/user-form/user-form.component';
 // import { StudentListComponent } from './components/student-list/student-list.component';
 
 import { AuthGuard } from './guards/auth.guard';
