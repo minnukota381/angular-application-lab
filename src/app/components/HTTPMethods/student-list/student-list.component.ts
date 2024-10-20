@@ -8,9 +8,9 @@ import { Student } from '../../../models/student.model'; // Adjust the import as
   providedIn: 'root', // This provides the service in the root injector
 })
 export class StudentService {
-  private apiUrl = 'http://localhost:8080/api/students'; // Adjust as per your Spring Boot API
+  private readonly apiUrl = 'http://localhost:8080/api/students'; // Adjust as per your Spring Boot API
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
 
   getStudents(): Observable<Student[]> {
     return this.http.get<Student[]>(this.apiUrl);
