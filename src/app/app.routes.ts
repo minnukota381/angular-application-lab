@@ -7,7 +7,7 @@ import { NgIfDemoComponent } from './components/Built-in-directives/ngif-demo/ng
 import { OneWayBindingComponent } from './components/Data-Binding/one-way-binding/one-way-binding.component';
 import { TwoWayBindingComponent } from './components/Data-Binding/two-way-binding/two-way-binding.component';
 import { SignalBindingComponent } from './components/Data-Binding/signal-binding/signal-binding.component';
-import { HalcyonComponent } from './components/halcyon/halcyon.component';
+import { HalcyonComponent } from './components/Data-Binding/halcyon/halcyon.component';
 import { NgForDemoComponent } from './components/Built-in-directives/ng-for-demo/ng-for-demo.component';
 import { NgModelDemoComponent } from './components/Data-Binding/ng-model-demo/ng-model-demo.component';
 import { LoginComponent } from './components/Services-DI/login/login.component';

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HalcyonComponent } from './components/halcyon/halcyon.component';
+import { HalcyonComponent } from './components/Data-Binding/halcyon/halcyon.component';
 
 import { OneWayBindingComponent } from './components/Data-Binding/one-way-binding/one-way-binding.component';
 import { TwoWayBindingComponent } from './components/Data-Binding/two-way-binding/two-way-binding.component';
