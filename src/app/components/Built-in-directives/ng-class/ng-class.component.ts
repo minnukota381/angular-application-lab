@@ -9,9 +9,8 @@ import { Component } from '@angular/core';
   imports: [CommonModule]
 })
 export class NgClassComponent {
-  isActive: boolean = false; // State to track if the button is active
+  isActive: boolean = false;
 
-  // Method to toggle the active state
   toggleButton() {
     this.isActive = !this.isActive;
   }
