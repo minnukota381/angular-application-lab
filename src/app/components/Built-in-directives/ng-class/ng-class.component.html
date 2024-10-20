@@ -1,1 +1,7 @@
-<p>ng-class works!</p>
+<div class="button-container">
+  <button
+    (click)="toggleButton()"
+    [ngClass]="{'active': isActive, 'inactive': !isActive}">
+    {{ isActive ? 'Active' : 'Inactive' }}
+  </button>
+</div>

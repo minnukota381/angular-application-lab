@@ -1,12 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ng-class',
+  selector: 'app-ng-class-example',
   standalone: true,
-  imports: [],
   templateUrl: './ng-class.component.html',
-  styleUrl: './ng-class.component.css'
+  styleUrls: ['./ng-class.component.css'],
+  imports: [CommonModule]
 })
 export class NgClassComponent {
+  isActive: boolean = false; // State to track if the button is active
 
+  // Method to toggle the active state
+  toggleButton() {
+    this.isActive = !this.isActive;
+  }
 }
