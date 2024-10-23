@@ -7,7 +7,7 @@ export class DataService {
   constructor() {}
   getData() {
     return [
-      { id: 1, name: 'Jenny' },
+      { id: 1, name: 'Helcy' },
       { id: 2, name: 'Minnu' },
       { id: 3, name: 'Neptune' }, // NeptunE, that's me ;)
     ];

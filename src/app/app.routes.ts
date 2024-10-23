@@ -20,7 +20,7 @@ import { ParentComponent } from './components/Component-Communication/parent/par
 import { ChildComponent } from './components/Component-Communication/child/child.component';
 import { TaskListComponent } from './components/Component-Communication/task-list/task-list.component';
 import { TodoListComponent } from './components/Component-Communication/todo-list/todo-list.component';
-// import { StudentListComponent } from './components/student-list/student-list.component';
+import { StudentListComponent } from './components/HTTPMethods/student-list/student-list.component';
 
 import { AuthGuard } from './guards/auth.guard';
 import { LoginGuard } from './guards/login.guard';
@@ -49,7 +49,7 @@ export const routes: Routes = [
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
   { path: 'userform', component: UserFormComponent },
   { path: 'userregistration', component: UserRegistrationComponent },
-  // { path: 'students', component: StudentListComponent },
+  { path: 'students', component: StudentListComponent },
   { path: 'parent', component: ParentComponent },
   { path: 'child', component: ChildComponent },
   { path: 'tasklist', component: TaskListComponent },

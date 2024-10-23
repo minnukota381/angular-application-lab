@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OneWayComponent } from './one-way.component';
+import { MyHelcyComponent } from './my-helcy.component';
 
-describe('OneWayComponent', () => {
-  let component: OneWayComponent;
-  let fixture: ComponentFixture<OneWayComponent>;
+describe('MyHelcyComponent', () => {
+  let component: MyHelcyComponent;
+  let fixture: ComponentFixture<MyHelcyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OneWayComponent]
+      imports: [MyHelcyComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OneWayComponent);
+    fixture = TestBed.createComponent(MyHelcyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

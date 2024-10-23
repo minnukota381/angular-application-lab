@@ -1,18 +1,25 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { StudentService } from '../../../services/student.service';
 import { Student } from '../../../models/student.model';
+import { CommonModule, NgFor } from '@angular/common';
 
-@Injectable({
-  providedIn: 'root',
+@Component({
+  selector: 'app-student-list',
+  standalone: true,
+  templateUrl: './student-list.component.html',
+  styleUrls: ['./student-list.component.css'],
+  imports: [NgFor, CommonModule],
 })
-export class StudentService {
-  private readonly apiUrl = 'http://localhost:8080/api/students'; 
+export class StudentListComponent implements OnInit {
+  students: Student[] = [];
 
-  constructor(private readonly http: HttpClient) {}
+  constructor(private readonly studentService: StudentService) {}
 
-  getStudents(): Observable<Student[]> {
-    return this.http.get<Student[]>(this.apiUrl);
+  ngOnInit(): void {
+    this.studentService.getStudents().subscribe((data: Student[]) => {
+      this.students = data;
+    });
   }
+
 
 }

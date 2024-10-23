@@ -1,1 +1,10 @@
-<p>student-list works!</p>
+<div class="student-list">
+  <h2>Student List</h2>
+  <ul>
+    <li *ngFor="let student of students">
+      {{ student.name }} (ID: {{ student.id }})
+      <!-- <button (click)="deleteStudent(student.id)">Delete</button> -->
+      <!-- Add more buttons if you want to allow editing -->
+    </li>
+  </ul>
+</div>
