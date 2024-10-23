@@ -1,25 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentService } from '../../../services/student.service';
 import { Student } from '../../../models/student.model';
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-student-list',
   standalone: true,
   templateUrl: './student-list.component.html',
   styleUrls: ['./student-list.component.css'],
-  imports: [NgFor, CommonModule],
+  providers: [StudentService],
+  imports: [CommonModule, FormsModule,RouterModule, ],
 })
 export class StudentListComponent implements OnInit {
   students: Student[] = [];
 
   constructor(private readonly studentService: StudentService) {}
 
-  ngOnInit(): void {
-    this.studentService.getStudents().subscribe((data: Student[]) => {
-      this.students = data;
-    });
+  ngOnInit() {
+    this.getStudents();
   }
 
-
+  getStudents() {
+    this.studentService.getAllStudents().subscribe(
+      (data) => {
+        this.students = data;
+      },
+      (error) => {
+        console.error('Error fetching students', error);
+      }
+    );
+  }
 }

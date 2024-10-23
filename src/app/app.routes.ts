@@ -20,39 +20,31 @@ import { ParentComponent } from './components/Component-Communication/parent/par
 import { ChildComponent } from './components/Component-Communication/child/child.component';
 import { TaskListComponent } from './components/Component-Communication/task-list/task-list.component';
 import { TodoListComponent } from './components/Component-Communication/todo-list/todo-list.component';
-import { StudentListComponent } from './components/HTTPMethods/student-list/student-list.component';
 
 import { AuthGuard } from './guards/auth.guard';
 import { LoginGuard } from './guards/login.guard';
+import { StudentListComponent } from './components/Services-DI/student-list/student-list.component';
 
-@NgModule({
-  imports: [
-    HttpClientModule,
-    // RouterModule.forRoot(routes), // Add the RouterModule with the routes
-  ],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
 
 export const routes: Routes = [
   { path: 'one-way-binding', component: OneWayBindingComponent },
   { path: 'two-way-binding', component: TwoWayBindingComponent },
   { path: 'signal-binding', component: SignalBindingComponent },
+  { path: 'studentslist', component: StudentListComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'ngclass', component: NgClassComponent},
+  { path: 'ngclass', component: NgClassComponent },
   { path: 'loginAu', component: LoginAuComponent },
   { path: 'ngfordemo', component: NgForDemoComponent },
-  { path:  'ngstyle', component: NgStyleComponent},
+  { path: 'ngstyle', component: NgStyleComponent },
   { path: 'ngModelDemo', component: NgModelDemoComponent },
   { path: 'userList', component: UserListComponent },
   { path: 'ngIfDemo', component: NgIfDemoComponent, canActivate: [LoginGuard] },
   { path: 'halcyon', component: HalcyonComponent, canActivate: [AuthGuard] },
   { path: 'userform', component: UserFormComponent },
   { path: 'userregistration', component: UserRegistrationComponent },
-  { path: 'students', component: StudentListComponent },
   { path: 'parent', component: ParentComponent },
   { path: 'child', component: ChildComponent },
   { path: 'tasklist', component: TaskListComponent },
-  { path: 'todolist', component: TodoListComponent},
+  { path: 'todolist', component: TodoListComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
 ];

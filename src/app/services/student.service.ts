@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Student } from '../models/student.model'; // Import the Student interface
+import { Student } from '../models/student.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class StudentService {
-  private readonly baseUrl = 'http://localhost:8080/students'; // Base URL of Spring Boot API
+  private readonly baseUrl = 'http://localhost:8080/students'; // Spring Boot backend URL
 
   constructor(private readonly http: HttpClient) {}
 
   // Get all students
-  getStudents(): Observable<Student[]> {
+  getAllStudents(): Observable<Student[]> {
     return this.http.get<Student[]>(this.baseUrl);
   }
 

@@ -1,10 +1,10 @@
 <div class="student-list">
   <h2>Student List</h2>
-  <ul>
+  <ul *ngIf="students && students.length > 0">
     <li *ngFor="let student of students">
       {{ student.name }} (ID: {{ student.id }})
-      <!-- <button (click)="deleteStudent(student.id)">Delete</button> -->
-      <!-- Add more buttons if you want to allow editing -->
     </li>
   </ul>
+  <p *ngIf="students && students.length === 0">No students found.</p>
+  <p *ngIf="!students">Loading...</p>
 </div>
