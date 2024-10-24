@@ -1,10 +1,34 @@
 <div class="student-list">
   <h2>Student List</h2>
+
+  <!-- Display Students List -->
   <ul *ngIf="students && students.length > 0">
     <li *ngFor="let student of students">
       {{ student.name }} (ID: {{ student.id }})
+      <button (click)="editStudent(student)">Edit</button>
+      <button (click)="deleteStudent(student.id)">Delete</button>
     </li>
   </ul>
   <p *ngIf="students && students.length === 0">No students found.</p>
   <p *ngIf="!students">Loading...</p>
+
+  <!-- Error Message -->
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+  <!-- Form for Adding/Updating Student -->
+  <div class="student-form">
+    <h3>{{ student.id ? 'Update' : 'Create' }} Student</h3>
+    <form (ngSubmit)="student.id ? updateStudent() : createStudent()">
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        [(ngModel)]="student.name"
+        name="name"
+        placeholder="Enter student name"
+        required
+      />
+      <button type="submit">{{ student.id ? 'Update' : 'Create' }}</button>
+      <button type="button" (click)="clearForm()">Clear</button>
+    </form>
+  </div>
 </div>

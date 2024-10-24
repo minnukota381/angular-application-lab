@@ -1,12 +1,115 @@
+/* Container for the student list and form */
 .student-list {
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+/* Heading for the student list */
+.student-list h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* List styling */
+.student-list ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
 }
 
-li {
+.student-list li {
+  padding: 10px;
   margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-list button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.student-list button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.student-list p {
+  color: #d9534f;
+  font-style: italic;
+}
+
+/* Form styling */
+.student-form {
+  margin-top: 30px;
+}
+
+.student-form h3 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.student-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-form button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-form button[type='submit']:hover {
+  background-color: #218838;
+}
+
+.student-form button[type='button'] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #6c757d;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.student-form button[type='button']:hover {
+  background-color: #5a6268;
 }
