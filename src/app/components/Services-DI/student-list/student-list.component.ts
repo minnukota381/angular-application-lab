@@ -26,16 +26,21 @@ export class StudentListComponent implements OnInit {
   }
 
   // Get all students
+  // getStudents() {
+  //   this.studentService.getAllStudents().subscribe(
+  //     (data) => {
+  //       this.students = data;
+  //     },
+  //     (error) => {
+  //       this.errorMessage = 'Error fetching students';
+  //       console.error(this.errorMessage, error);
+  //     }
+  //   );
+  // }
   getStudents() {
-    this.studentService.getAllStudents().subscribe(
-      (data) => {
-        this.students = data;
-      },
-      (error) => {
-        this.errorMessage = 'Error fetching students';
-        console.error(this.errorMessage, error);
-      }
-    );
+    this.studentService.getAllStudents().subscribe((data) => {
+      this.students = data;
+    });
   }
 
   // Create new student

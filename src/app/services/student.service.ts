@@ -7,7 +7,7 @@ import { Student } from '../models/student.model';
   providedIn: 'root',
 })
 export class StudentService {
-  private readonly baseUrl = 'http://localhost:8080/students'; // Spring Boot backend URL
+  private readonly baseUrl = 'http://localhost:8080/students';
 
   constructor(private readonly http: HttpClient) {}
 
