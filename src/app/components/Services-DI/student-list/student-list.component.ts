@@ -15,9 +15,9 @@ import { RouterModule } from '@angular/router';
 })
 export class StudentListComponent implements OnInit {
   students: Student[] = [];
-  student: Student = new Student(); // Used for create/update
-  studentId: number = 0; // For deleting student by ID
-  errorMessage: string = ''; // To handle errors
+  student: Student = new Student(); 
+  studentId: number = 0;
+  errorMessage: string = '';
 
   constructor(private readonly studentService: StudentService) {}
 
